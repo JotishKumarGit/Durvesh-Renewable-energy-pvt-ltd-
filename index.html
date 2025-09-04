@@ -93,6 +93,25 @@
   .custom-subheading {
     font-size: 1.6rem;
   }
+  /* Mega Dropdown Custom Styles */
+  .dropdown-menu.mega-dropdown {
+    width: 600px; /* adjust as needed */
+    left: 50% !important;
+    transform: translateX(-50%);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px;
+  }
+
+  .dropdown-menu.mega-dropdown .dropdown-item {
+    padding: 8px 12px;
+    white-space: nowrap;
+  }
+
+  .nav-item.dropdown:hover .mega-dropdown {
+    display: grid; /* ensures visibility on hover */
+  }
   @media (min-width: 768px) {
     .custom-heading {
       font-size: 1.5rem; /* tablet */
@@ -206,10 +225,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="#" class="nav-item nav-link active">Home</a>
-          <a href="#" class="nav-item nav-link">About</a>
-          <a href="#" class="nav-item nav-link">Services</a>
-          <a href="#" class="nav-item nav-link">Collection</a>
+          <a href="" class="nav-item nav-link active">Home</a>
+          <a href="" class="nav-item nav-link">About</a>
+          <a href="" class="nav-item nav-link">Services</a>
+          <a href="" class="nav-item nav-link">Collection</a>
           <div class="nav-item dropdown">
             <a
               href="#"
@@ -218,15 +237,20 @@
               >Products</a>
             <div class="dropdown-menu fade-up m-0">
               <a href="#" class="dropdown-item">Wheat</a>
-              <!-- <a href="#" class="dropdown-item">Rice</a>
+              <a href="#" class="dropdown-item">Rice</a>
               <a href="#" class="dropdown-item">Sugarcane</a>
               <a href="#" class="dropdown-item">Maize</a>
               <a href="#" class="dropdown-item">Red Chilli</a>
-              <a href="#" class="dropdown-item">Black Pepper</a> -->
+              <a href="#" class="dropdown-item">Apple</a>
+              <a href="#" class="dropdown-item">Ginger</a>
+              <a href="#" class="dropdown-item">Red Chilli</a>
+              <a href="#" class="dropdown-item">Turmeric</a>
+              <a href="#" class="dropdown-item">Sweet Lime</a>
+              <a href="#" class="dropdown-item">Sugar</a>
             </div>
           </div>
           <!-- <a href="#" class="nav-item nav-link">Contact</a> -->
-          <a href="#" class="nav-item nav-link">Contact</a>
+          <a href="" class="nav-item nav-link">Contact</a>
         </div>
         
       </div>
